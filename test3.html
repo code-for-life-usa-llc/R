@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinks 🧃</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <div class="parallax"></div>
+  </head>
+  <body>
+    <h1>Drinks</h1>
+
+    <style>
+      body {
+        background-color: burlywood;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Ibarra Real Nova", serif;
+        font-family: "Rubik", sans-serif;
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+      
+      .parallax {
+        background-image: url("img_wall.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .primediv {
+        border: 4px solid #393939;
+        height: 200px;
+        width: 500px;
+        background: linear-gradient(
+          180deg,
+          rgb(208, 234, 11),
+          rgb(48, 74, 201)
+        );
+      }
+
+      p{
+        font-family: "Ibarra Real Nova", serif;
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+
+      }
+
+      
+    </style>
+    <div class="primediv">
+      <p class="amazing"><b>$29.99</b>Prime</p>
+      <input
+        type="image"
+        src="output-onlinepngtools.png"
+        onclick="prime()"
+        height="150px"
+        width="200px"
+      />
+    </div>
+
+    <script>
+        function prime(){
+            location.replace("https://www.youtube.com/watch?v=Qk04Sd6fGLU")
+        }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <style>
+        body{
+            background-image: url(background4.jpg);
+            background-size: cover;
+        }
+     #desc1{
+        position: absolute;
+        left:310px;
+     }
+     #button1{
+        position: absolute;
+        bottom: 545px;
+        left:310px;
+     }
+     #desc2{
+        position: absolute;
+        left:310px;
+        bottom: 450px;
+     }
+     
+     #desc3{
+        position: absolute;
+        left:310px;
+        bottom: 250px; 
+     }
+    </style>
+    <body>
+     <div>
+        <input id="pancake" onclick="pancake()" type="image" src="feastable.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc1">There's no denying the sweet success of MrBeast's chocolate bar company Feastables. Even if you don't watch the YouTuber, you've probably heard MrBeast's name. They have just four ingredients, are gluten free, and come in three flavors.  price:$0.1 calories:5,000</b>
+        <button id="button1" onclick="button1()">order here!</button>
+     </div>
+     <input id="oatmel" onclick="oatmel()" type="image" src="cake.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+     <b id="desc2">Some are light, fluffy, tender, airy, tough, spongy, springy, finely crumbed. There are a lot of different words that could describe a cake depending on what sort of cake it is. Cake is a sweet baked good that comes in many forms.   price:0.1 calories:5,000</b>
+     <button id="button2" onclick="button2()">order here!</button>
+     <div>
+     <div>
+        <input id="waffle" onclick="waffle()" type="image" src="flan.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc3">an open pie containing any of various sweet or savory fillings. b : custard baked with a caramel glaze. 2 : the metal disk of a coin, token, or medal as distinguished from the design and lettering stamped on it.  price:0.1  calories:15,000</b>
+        <button id="button3" onclick="button3()">order here!</button>
+     </div>
+
+     </div>
+    </body>
+    <script>
+function button1(){
+    location.replace("checkout.html")
+}
+function button2(){
+    location.replace("checkout.html")
+}
+function button3(){
+    location.replace("checkout.html")
+}
+    </script>
+</html>

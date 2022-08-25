@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut " href="logo.jpg">
+<!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<!--fonts-->
+<!--head-->
+<div class="parallax"></div>
+    <title>when-these</title>
+    <!--head-->
+</head>
+<body>
+  <!--nav Bar-->
+  <div id="nav_bar">
+    <ul>
+      <li><img src="hogrider.png"height="70px"></li>
+        <li>	<a href="test1.html"> About us </a></li>
+     
+         <li>	<a href="test2.html">reservations</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+             </a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+     </ul>
+     </div>
+
+     
+      <!--nav Bar-->
+
+    <h1 class="demo">Drinks</h1>
+    <div class="parallax"></div>
+    
+
+    <!--css-->
+    <style>
+      .parallax {
+      background-image: url("menu3.jpg");
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+        .demo{
+            text-align: center;
+        
+        
+        font-size: 40px;
+        font-family: 'Ibarra Real Nova', serif;
+        font-family: 'Rubik', sans-serif;
+        }
+        
+        body {
+            background-image: url("menu3.jpg");
+            background-size: cover;
+           
+        }
+
+
+        ul{
+         list-style-type: none;
+          margin:0;
+          padding:0;
+          overflow:hidden; 
+          background-color: b;
+          position:sticky
+              
+          }
+          li{
+            float:left;
+            color: whitesmoke;
+              
+          }
+          li a{
+          display: block;
+          color: rgb(23, 64, 90);
+          text-align: center;
+          padding: 12px 16px;
+          text-decoration: none;
+          text-align:center;
+          font-family:cursive;
+          
+          }
+          
+          li a:hover{
+          
+
+          background-color: lightskyblue;
+          
+          }
+        
+          #nav_bar {
+                overflow: hidden;
+                background-color: transparent;
+            }
+            #nav_bar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #nav_bar a:hover {
+                background-color: bisque;
+                color: black;
+            }
+            #nav_bar a.active {
+                background-color: black;
+                color: white;
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 60px;
+            }
+            
+            .input{
+             float:right;
+             text-align: center;
+            }
+            .input2 {
+              float:left;
+            }
+
+            p {
+              font-size: 30px;
+              color:wheat;
+
+            
+            }
+            .amazing{
+                font-family: 'Ibarra Real Nova', serif;
+                font-family: 'Rubik', sans-serif;
+            }
+
+            .logo img{
+              border-radius: 50px;
+              text-align: center;
+              height: 200px;
+              width: 200px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+         
+            .img img{
+              height: 20px;
+              width: 50px;
+            }
+        
+            .right img{
+              height: 50px;
+
+            }
+
+            .parallax {
+        background-image: url("logo.jpg");
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-family: 'Ibarra Real Nova', serif;
+        font-family: 'Rubik', sans-serif;
+      }
+    </style>
+    <!--css-->
+
+
+<div class="input">
+  <p class="amazing"><b>$29.99</b> amazing veri gud koolaid</p>
+<input 
+type="image"
+src="koolaid2.png"
+onclick="sand()"
+height="150px"
+width="200px"
+></div>
+
+
+
+<div class="inputtwo">
+    <p class="amazing"><b>$100</b> amazing veri gud water </p>
+  <input 
+  type="image"
+  src="water.png"
+  onclick="chicken()"
+  height="150px"
+  width="200px"
+  ></div>
+<!----------------------------------------------------------------------------------------->
+
+<script>
+  function arrow() {
+    location.replace("http://127.0.0.1:5500/test3.html")
+  }
+   function prime(){
+var music = new Audio("click.mp3")
+music.play;
+location.replace("")
+  }
+
+  function sand(){
+var music = new Audio("click.mp3")
+music.play;
+location.replace("http://127.0.0.1:5500/test1.html")
+  }
+
+  function chicken() {
+    location.replace("http://127.0.0.1:5500/test2.html")
+  }
+  window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("nav_bar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                     navbar.classList.remove("sticky");
+                }
+            }
+</script>
+<!----------------------------------------------------------------------------------------->
+    
+</body>
+</html>

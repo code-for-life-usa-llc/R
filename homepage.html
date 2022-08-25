@@ -1,0 +1,200 @@
+<html>
+    <style>
+          body{
+            background-color: wheat;
+           }
+            body, html {
+                height: 100%;
+            }
+            .parallax {
+                background-image: url('background4.jpg');
+                height: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }  
+            
+            
+    
+        #pancakes{
+     position: absolute;
+     bottom: 400px;
+    left: 100px;
+        }
+ #pancakes:hover{
+    border: dashed;
+    border-color: red;
+ }
+#lunch{
+    position: absolute;
+    bottom: 400px;
+    left: 600px;
+}
+#lunch:hover{
+    border: dashed;
+    border-color: red;
+ }
+
+ #beverages{
+    position: absolute;
+    bottom: 400px;
+    left: 1100px;
+}
+#beverages:hover{
+    border: dashed;
+    border-color: red;
+ }
+
+ #dessert{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+#dessert:hover{
+    border: dashed;
+    border-color: red;
+ }
+
+ #coffes{
+    position: absolute;
+    bottom: 100px;
+    left: 600px;
+}
+#coffes:hover{
+    border: dashed;
+    border-color: red;
+ }
+
+ #seafood{
+    position: absolute;
+    bottom: 100px;
+    left: 1100px;
+}
+#seafood:hover{
+    border: dashed;
+    border-color: red;
+ }
+
+ 
+ #nav_bar {
+                overflow: hidden;
+                background-color: transparent;
+            }
+            #nav_bar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #nav_bar a:hover {
+                background-color: bisque;
+                color: black;
+            }
+            #nav_bar a.active {
+                background-color: black;
+                color: white;
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 60px;
+            }
+            ul{
+         list-style-type: none;
+          margin:0;
+          padding:0;
+          overflow:hidden; 
+          background-color: b;
+          position:sticky
+              
+          }
+          li{
+            float:left;
+            color: whitesmoke;
+              
+          }
+          li a{
+          display: block;
+          color: rgb(23, 64, 90);
+          text-align: center;
+          padding: 12px 16px;
+          text-decoration: none;
+          text-align:center;
+          font-family:cursive;
+          
+          }
+          
+          li a:hover{
+          
+
+          background-color: lightskyblue;
+          
+          }
+ 
+ 
+    </style>
+       <body>
+        <div id="nav_bar">
+            <ul>
+              <li><img src="hogrider.png"height="70px"></li>
+                <li>	<a href="aboutUs.html"> About us </a></li>
+             
+                 <li>	<a href="res.html">reservations</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                     </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+             </ul>
+             </div>
+        <div class="parallax"></div>
+        <div>
+            <input  id="pancakes" onclick="pancake()" type="image" src="pancakes.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        </div>
+        <div>
+            <input  id="lunch" onclick="lunch()" type="image" src="lunch.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        </div>
+
+        <div>
+            <input  id="beverages" onclick="beverages()" type="image" src="beverages.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        </div>
+
+        <div>
+            <input  id="dessert" onclick="dessert()" type="image" src="dessert.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        </div>
+
+        <div>
+            <input  id="coffes" onclick="coffes()" type="image" src="coffes.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        </div>
+
+
+
+    </body>
+    <script>
+       function pancake(){
+            location.replace("breakfast.html")
+        }
+        function lunch(){
+            location.replace("lunch.html")
+        }
+        function beverages(){
+            location.replace("test.html")
+        }
+        function dessert(){
+            location.replace("dessert.html")
+        }
+        function coffes(){
+            location.replace("coffee.html")
+        }
+        function seafood(){
+            location.replace("seafood.html")
+        }
+    </script>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Reservation</title>
+    <style>
+        #contain {
+            border-radius: 5px ;
+            -webkit-border-radius: 5px;
+            background-color:#f2f2f2;
+            padding: 20px;
+            width: 500px;
+            position: relative;
+            left: 500px;
+            border: 0 none;
+            box-shadow:#333;
+        }
+        .color {
+            background-color: #f2f2f2;
+            background-image: linear-gradient(45deg, blue, purple, purple,purple, purple);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            left: 500px;
+            font-size: 100px;
+            font-family:'itim', cursive;
+            top: 300px;
+        }
+        form {
+            position :relative;
+            left: 100px;
+        }
+        input {
+            box-sizing: 20px;
+        }
+        input[type=text] {
+            padding:5px; 
+            border:2px solid #ccc; 
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        input[type=submit] {
+            padding:5px 15px; 
+            background:#ccc; 
+            border:0 none;
+            cursor:grab;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; 
+        }
+        body {
+            background-color: skyblue;
+            font-family:"itim", cursive;
+        }
+        body, html {
+            height: 100%;
+        }
+        .parallax {
+            background-image: url("reservation.jpg");
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 80px;
+            font-family: 'itim', cursive;
+            color: #333;
+        }
+        .move {
+            position: relative;
+            right: 10px;
+        }
+        
+        .change {
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: #333;
+            border-color: #333;
+        }
+        
+        
+        
+    </style>
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<body>
+        <div class="parallax">
+            <h1 class="color"> Reservation </h1>
+        </div>
+        <h1 align="center"> <strong>PLEASE NOTE: RESERVATIONS <br> ARE EXPENSIVE </strong> </h1>
+        <br><br><br>
+    <div id="contain">
+    <section >
+        <form id="finish-form" onsubmit="needed()" name="Form">
+            <p class="font" >Name:</p>
+            <br>
+            <input type="text" id="name" placeholder="first-name" name="requirement" class="move"> <input type="text" id="name" placeholder="last-name" name ="requirement2" class="move">
+  
+            <br><br>
+            <p  class="font">Date of Reservation:</p>
+            <input type="date" class="change">
+            <br><br>
+            <p></p>
+            <p></p> Attendees:</p>
+            <select class="change">
+                <option> 1 -- $100 </option>
+                <option> 2 -- $200 </option>
+                <option> 3 -- $300 </option>
+                <option> 4 -- $400 </option>
+            </select>
+            <br><br>
+            <p> Attendees names:</p>
+            <input type="text" placeholder="type names here..." lkkl >
+            <br><br>
+            <p  class="font"> Reason for reservation:</p>
+            <input type="text" placeholder="describe..." name="requirement3">
+            <br><br>
+            <p  class="font">E-mail</p>
+            <input type="text" placeholder="type here..." name="requirement4">
+            
+            <br><br>
+            <input type="submit" onclick=" finish()">
+        
+    </section>
+</div>
+<br><br><br>
+<script>
+    function needed() {
+        let empty = document.forms["Form"]["requirement" && "requirement2"].value;
+        let empty2 = document.forms["Form"]["requirement3" && "requirement4"].value;
+        if(empty === "" || empty === null) {
+            alert("You are required to fill out every section to make a reservation");
+            window.location.reload(false)
+            return false;
+         }
+         else if(empty2 === "" || empty2 === null) {
+             alert("You are required to fill out every section to make a reservation")
+         }
+         else {
+             alert("Your reservation was complete!")
+         }
+        } 
+        
+</script>
+</body>
+</html>

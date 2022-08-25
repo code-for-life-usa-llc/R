@@ -1,0 +1,57 @@
+<html>
+    <style>
+        body{
+            background-image: url(background4.jpg);
+            background-size: cover;
+        }
+     #desc1{
+        position: absolute;
+        left:310px;
+     }
+     #button1{
+        position: absolute;
+        bottom: 545px;
+        left:310px;
+     }
+     #desc2{
+        position: absolute;
+        left:310px;
+        bottom: 450px;
+     }
+     
+     #desc3{
+        position: absolute;
+        left:310px;
+        bottom: 250px; 
+     }
+    </style>
+    <body>
+     <div>
+        <input id="pancake" onclick="pancake()" type="image" src="pancakes.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc1">A pancake (or hot-cake, griddlecake, or flapjack) is a flat cake, often thin and round, prepared from a <br>starch-based batter that may contain eggs, milk and butter and cooked on a hot surface such as a griddle<br> or frying pan, often frying with oil or butter. It is a type of batter bread.  price:$500.99 calories:5,000</b>
+        <button id="button1" onclick="button1()">order here!</button>
+     </div>
+     <input id="oatmel" onclick="oatmel()" type="image" src="oatmeal.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+     <b id="desc2">Oatmeal is a breakfast food made from oats and liquid like water or milk. Many foods fall in and out of <br>favor as health trends come and go. Not oatmeal. This whole-grain powerhouse has been packing serious <br>nutrition and hearty flavor into breakfast for generations.    price:1,000.99 calories:10,000</b>
+     <button id="button2" onclick="button2()">order here!</button>
+     <div>
+     <div>
+        <input id="waffle" onclick="waffle()" type="image" src="waffle.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc3">A waffle is a leavened batter or dough cooked between two hot plates of a waffle iron, patterned to give a characteristic size, shape, and grid-like surface impression. Waffles are cooked until they become golden-brown in color, with a crispy outer texture and a soft interior.price:   5,000.99 calories:15,000</b>
+        <button id="button3" onclick="button3()">order here!</button>
+     </div>
+
+     </div>
+    </body>
+    <script>
+function button1(){
+    location.replace("checkout.html")
+}
+function button2(){
+    location.replace("checkout.html")
+}
+function button3(){
+    location.replace("checkout.html")
+}
+    </script>
+</html>

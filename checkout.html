@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            background-image: linear-gradient(blue, skyblue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'itim', cursive;
+        }
+        body {
+            background: burlywood;
+        }
+        #contain {
+            border-radius: 10px ;
+            -webkit-border-radius: 5px;
+            background-color:#f2f2f2;
+            padding: 20px;
+            width: 500px;
+            position: relative;
+            left: 500px;
+            border:0 none;
+            box-shadow:#333;
+            border-radius: 5px;
+            border-color: #333;
+        
+        }
+        .change {
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: #333;
+            border-color: #333;
+        }
+        #size {
+            width: 50px;
+        }
+        p {
+            font-family: 'itim', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"> Checkout </h1>
+    <div id="contain">
+        <section> 
+            <form onsubmit="necessary()" name="Format">
+                <p>Your name:</p> <input placeholder="first name..." class="change" name="needed">  <input placeholder="last name..." class="change" name="needed2">
+                <br><br>
+                <p>Date:</p> <input type="date" class="change" name="needed3">
+                <br><br>
+                <p>Order amounts:</p>
+                
+                <select class="change">
+                    <option> 1</option>
+                    <option> 2</option>
+                    <option>3 </option>
+                    <option>4 </option>
+                    <option>5 </option>
+                </select>
+                <p>Card number</p> <input id="size" class="change" name="needed4" maxlength="4"> - <input id="size" class="change" name="needed5" maxlength="4"> - <input id="size" class="change" name="needed6" maxlength="4"> - <input id="size" class="change" name="needed7" maxlength="4">
+                <br><br><br><br>
+                <input type="submit" class="change">
+                <script>
+                    function necessary() {
+                        let nothing = document.forms["Format"]["needed" && "needed2"].value;
+                        let nothing2 = document.forms["Format"]["needed3" && "needed4"].value;
+                        let nothing3 = document.forms["Format"]["needed5" && "needed6"].value;
+                        let nothing4 = document.forms["Format"]["needed7"].value;
+                        if(nothing === "" || nothing === null) {
+                        alert("You are required to fill out every section to make an order");
+                        window.location.reload(false)
+                        return false;
+                    }
+                        else if(nothing2 === "" || nothing2 === null) {
+                         alert("You are required to fill out every section to make an order")
+                    }
+                        else if(nothing3 === "" || nothing3 === null) {
+                            alert("You are required to fill out every section to make an order")
+                        }
+                        else if(nothing4 === "" || nothing4 === null) {
+                            alert("You are required to fill out every section to make an order")
+                        }
+                        else {
+                        alert("Your reservation was complete!")
+                    }
+                } 
+                </script>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

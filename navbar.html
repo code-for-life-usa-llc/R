@@ -1,0 +1,69 @@
+<html>
+    <head>
+    
+        <style>
+            #nav_bar {
+                overflow: hidden;
+                background-color: black;
+            }
+            #nav_bar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #nav_bar a:hover {
+                background-color: bisque;
+                color: black;
+            }
+            #nav_bar a.active {
+                background-color: black;
+                color: white;
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 60px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div id="nav_bar">
+            <a class="activate" href="youtube.com">youtube</a>
+            <a class="activate" href=""> something</a>
+            <a class="activate" href="">here</a>
+        </div>
+        <div class="info">
+           
+            <!-- put information here-->
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("nav_bar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                     navbar.classList.remove("sticky");
+                }
+            }
+
+
+            
+        </script>
+        <h1>hello</h1>
+        <img src="sandwhich.png" height="600px ">
+
+    </body>
+</html>

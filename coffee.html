@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <style>
+    
+
+        body {
+            background-color: burlywood;
+        }
+
+        #move {
+            position: relative;
+            left: 1000px;
+            bottom: 400px;
+        }
+
+        #move2 {
+            position: relative;
+            bottom: 500px;
+        }
+
+        button {
+            border: none;
+            color: yellow;
+            background: purple;
+            border-radius: 5px;
+        }
+
+        img {
+            border-style: dashed;
+            border-width: 5px;
+            border-radius: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>COFFEE</h1>
+    <br><br>
+
+    <div>
+
+        <h2> Latte </h2>
+
+        <img src="latte.jpg">
+
+        <p> As the most popular coffee drink out there, the latte is comprised of a <br>  
+            shot of espresso and steamed milk with just a touch of foam. It can be <br>
+            ordered plain or with a flavor shot of anything from vanilla to pumpkin <br>
+            spice.  price:$100.99</p>
+
+            <button onclick="redirect()">Click</button>
+
+    </div>
+
+    <div id="move">
+
+        <h2> Cappuccino</h2>
+
+        <img src="cappuccino.webp" width="25%">
+
+        <p> Cappuccino is a latte made with more foam than steamed milk, often with <br>
+            a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find <br>
+            variations that use cream instead of milk or ones that throw in flavor <br>
+            shot, as well.  price:$200.99</p>
+
+            <button onclick="redirect2()"> click</button>
+
+    </div>
+
+    <div id="move2">
+
+        <h2>Espresso</h2>
+
+        <img src="Espresso.jpg" width="25%"> 
+
+        <p>An espresso shot can be served solo or used as the foundation of most <br>
+            coffee drinks, like lattes and macchiatos.  price:$300.99</p>
+
+            <button onclick="redirect3()"> click </button>
+
+    </div>
+    
+    <script>
+            function redirect() {
+                location.replace("checkout.html")
+            }
+
+            function redirect2() {
+                location.replace("checkout.html")
+            }
+
+            function redirect3() {
+                location.replace("checkout.html")
+            }
+
+            alert("this is the coffee page")
+    </script>
+    
+</body>
+</html>
